@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-GiftappApplication<giftapp>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.swcat.giftapp.GiftappApplication",
+            "projectName": "giftapp",
+            "args": ""
+        }
+    ]
+}

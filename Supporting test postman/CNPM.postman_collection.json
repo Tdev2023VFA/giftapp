@@ -1,0 +1,1344 @@
+{
+	"info": {
+		"_postman_id": "c49a2316-216e-4543-b669-35b110c1c1c1",
+		"name": "CNPM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"username\": \"testfull\",\r\n\t\"password\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/accounts/signup",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"accounts",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"username\": \"khangtest1\",\r\n\t\"password\": \"123\",\r\n    \t\"accountType\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/accounts/signin",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"accounts",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddAccountInfo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"uname\" : \"testabcc\",\r\n    \"disname\" : \"khangtest2\",\r\n    \"uaddress\" : \"daylaaddresss\",\r\n    \"phonenum\" : 919910266,\r\n    \"email\" : \"giakhangnguyen115@gmail.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/accountinfos",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"accountinfos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateAccountInfo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"disname\" : \"khangtest3\",\r\n    \"uaddress\" : \"chinhsuathongtin\",\r\n    \"phonenum\" :  919910266,\r\n    \"email\": \"giakhangnguyen115@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/accountinfos/testfull",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"accountinfos",
+						"testfull"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllAccountInfos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/accountinfos",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"accountinfos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAccountInfo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/accountinfos/testfull",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"accountinfos",
+						"testfull"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteAccountInfo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/accountinfos/khangtest2",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"accountinfos",
+						"khangtest2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddGOrderAddOn",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"gorderId\": 6,\r\n    \"addonId\": 2,\r\n    \"content\":\"day la lan thu dau hai\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/gorderaddon",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"gorderaddon"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateGOrderAddOn",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"gorderId\": 6,\r\n    \"addonId\": 5,\r\n    \"content\":\"Muon sua thanh addon thu ba\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/gorderaddon/22",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"gorderaddon",
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllGOrderAddOn",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/gorderaddon",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"gorderaddon"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetGOrderAddON",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/gorderaddon/6",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"gorderaddon",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteGOrderAddOn",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/gorderaddon/13",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"gorderaddon",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddOrder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"uname\" : \"testabcc\",\r\n    \"giftpackId\": 1,\r\n    \"receiveAddress\" : \"123/dada/tp.HCM\",\r\n    \"phoneNumber\" : 919910266,\r\n    \"dateArrive\" : \"23-05-2021\",\r\n    \"greetingCardContent\" : \"Happy birthday\",\r\n    \"addonId\": [1,2],\r\n    \"content\" : [\"Chúc mừng sinh nhật\", \"Nhạc sinh nhật vui vẻ\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/user/order",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"user",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetOrderByOrderId",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/user/order/id/6",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"user",
+						"order",
+						"id",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetOrderByUserName",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/user/order/uname/testfull",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"user",
+						"order",
+						"uname",
+						"testfull"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllOrder",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/user/order",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"user",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Paypal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cost\" : 0.5,\r\n    \"cid\" : 1\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/pay",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pay"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllItems",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/items",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetItemById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/items/1",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"items",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddItem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"itemName\": \"smart phone\",\r\n  \"itemDescription\": \"mot cai dien thoai\",\r\n  \"thumbnailimg\": \"https://www.apple.com/ac/structured-data/images/open_graph_logo.png?201810040211\",\r\n  \"price\": 750,\r\n  \"activeState\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/items",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateItem",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"itemName\": \"smart phone\",\r\n  \"itemDescription\": \"cai smart phone cuc xin\",\r\n  \"thumbnailimg\": \"https://www.apple.com/ac/structured-data/images/open_graph_logo.png?201810040211\",\r\n  \"price\": 350,\r\n  \"activeState\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/items/11",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"items",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetNumOfItems",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/items/noitemtypes",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"items",
+						"noitemtypes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddGiftpacksItems",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"giftpackid\": 1,\r\n    \"itemid\" : [1, 2]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/giftpackitems",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"giftpackitems"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetGiftpacksItemsById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/giftpackitems/1",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"giftpackitems",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllGiftpacksItems",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/giftpackitems",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"giftpackitems"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateGiftpackItems",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"giftpackId\": 1,\r\n    \"itemId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/giftpackitems/2",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"giftpackitems",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteGiftpackItem",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/giftpackitems/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"giftpackitems",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllOrderProcess",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/delivery",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"delivery"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateOrderProcess",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"gorderId\": 6,\r\n        \"pstate\": \"done\",\r\n        \"pdelivered\": 1,\r\n        \"pcanceled\": 0\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/delivery/update/6",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"delivery",
+						"update",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllComments",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/comments/listComments",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"comments",
+						"listComments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addComment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cid\": 6,\r\n    \"giftpackId\": 1,\r\n    \"uname\": \"testfull\",\r\n    \"content\": \"hàng bị lỗi\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/giftapp/comments/addComment",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"comments",
+						"addComment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListComment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/giftapp/comments/listComments",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"comments",
+						"listComments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCommentByGiftID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/giftapp/getCommentsBygiftID/1",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"getCommentsBygiftID",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCommentByUserName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/giftapp/comments/getCommentsByUname/testfull",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"comments",
+						"getCommentsByUname",
+						"testfull"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ResolveComment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"giakhangnguyen115@gmail.com\",\r\n    \"content\":\"Gift very good\",\r\n    \"commentResolve\":\"Thanks you for buy Gift\",\r\n    \"giftpackId\":1\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/giftapp/comments/resolveComment",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"comments",
+						"resolveComment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllGiftpacks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/giftpacks",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"giftpacks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetGiftpackById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/giftpacks/1",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"giftpacks",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddGiftpackId",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"gname\": \"qua chuc mung tuoi 20\",\r\n    \"gdescription\": \"smart phone\",\r\n    \"thumbnailimg\": \"https://www.apple.com/ac/structured-data/images/open_graph_logo.png?201810040211\",\r\n    \"price\": 130,\r\n    \"averageStar\": 0,\r\n    \"activeState\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/giftpacks",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"giftpacks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateGiftpack",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"gname\": \"qua chuc mung tuoi 20\",\r\n    \"gdescription\": \"nhieu smart phone\",\r\n    \"thumbnailimg\": \"https://www.apple.com/ac/structured-data/images/open_graph_logo.png?201810040211\",\r\n    \"price\": 1300,\r\n    \"averageStar\": 0,\r\n    \"activeState\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/giftpacks/12",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"giftpacks",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetNumOfGiftpack",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/giftpacks/nogiftpacktypes",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"giftpacks",
+						"nogiftpacktypes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllAddon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/addons",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"addons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAddonById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/addons/1",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"addons",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddAddon",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"aname\": \"flower\",\r\n  \"adescription\": \"999 doa hoa hong\",\r\n  \"price\": 99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/addons",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"addons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateAddOn",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"aname\": \"flower\",\r\n  \"adescription\": \"999 doa hoa hong, 1 thiep\",\r\n  \"price\": 199\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/addons/9",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"addons",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetNumOfAddOns",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/giftapp/api/addons/noaddontypes",
+					"protocol": "http",
+					"host": [
+						"tonydomain",
+						"ddns",
+						"net"
+					],
+					"port": "8080",
+					"path": [
+						"giftapp",
+						"api",
+						"addons",
+						"noaddontypes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
